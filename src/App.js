@@ -4,7 +4,7 @@ import './App.css'; // Import any necessary CSS file for styling
 function App() {
   // State variables to track toggle states and slider value
    
-  const [sliderValue, setSliderValue] = useState(50);
+  const [sliderValue, setSliderValue] = useState(10);
    // Initial value for the slider
    const [button1Active, setButton1Active] = useState(false);
    const [button2Active, setButton2Active] = useState(false);
