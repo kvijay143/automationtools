@@ -1,0 +1,115 @@
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+} 
+.blackboard{
+height: 257px;
+width: 214px;
+background-color: rgb(61, 59, 59);
+border-radius: 6px;
+display: flex;
+align-items: center;
+}
+
+
+.controls{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  height: 100%;
+  width: 50%;
+  border-right: 3px solid black;
+}
+ /* App.css */
+
+ 
+
+.toggle {
+  width: 31px;
+  height: 42px;
+  border-radius: 46%;
+  background-color: rgba(167, 158, 158, 0.433);
+  transition: box-shadow 0.3s, border-color 0.3s;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+
+.toggle.active {
+  
+   /* Set border color to blue for active button */
+   border-color: #49def8;
+   box-shadow: inset 0 5px 12px rgba(0, 0, 0, 0.7);
+
+}
+
+
+   
+
+
+.toggle:hover:not(.active) {
+  border-color: transparent; /* Set border color to transparent on hover for non-active buttons */
+}
+  
+
+ 
+
+  .sliderdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 50%;
+  }
+.slider {
+    -webkit-appearance: none;
+    width: 200px; /* Set the width to stretch across the container */
+    height: 20px; /* Set the height to make it vertical */
+    background: #49def8;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    border-radius: 20px;
+    position: relative;
+    transform: rotate(-90deg); /* Rotate the slider */
+    border: 10px solid rgb(84, 83, 83);
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #343636;
+    cursor: pointer;
+    position: relative;
+    
+  }
+  
+  .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+    position: relative;
+    left: calc(50% - 12.5px); /* Position the thumb horizontally centered */
+    bottom: -5px; /* Adjust the position of the thumb */
+  }
+
+
