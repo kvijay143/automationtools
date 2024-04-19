@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Import any necessary CSS file for styling
+import './App.css'; 
 
 function App() {
   // State variables to track toggle states and slider value
